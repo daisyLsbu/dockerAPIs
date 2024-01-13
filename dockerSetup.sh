@@ -15,8 +15,9 @@ docker rm <>
 #docker login
 # pull custom image or follow steps to create one
 #pull image from docker hub
-docker pull username/repository:tag
-#run container with volume mounting
+sudo docker pull daisylsbu/ubuntustress:ver5
+#docker pull username/repository:tag
+#run container with volume mounting; update script to run dockersetup.sh with n= number of containers
 sudo docker run -d 86a171db06e1 python3 looprandomstress.py #starting container with exec cmd in background
 #copy migration script outside the folder
 cp migrateVictim.py '/home/ubuntu/.'
