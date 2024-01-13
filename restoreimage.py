@@ -20,7 +20,3 @@ command = f"""
 
 ret = sbp.run(command, capture_output=True, shell=True)
 print(ret.stdout.decode())
-
-#docker load -i /Users/daisy/Desktop/test_img.img
-#            docker run -it test_img:latest
-
