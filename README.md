@@ -19,3 +19,21 @@ docker image push daisylsbu/linuxubuntu-stress:latest
 Notes:
 Backup migrate and restore script for containers
 Getting Container metrics using docker stats
+
+### Docker API Wrapper
+
+**Repository:** [`dockerAPI`](https://github.com/daisyLsbu/dockerAPI)
+
+A Python wrapper around the Docker Engine API that abstracts the low-level calls needed for container inspection and live migration. This module is used by the Migration Orchestrator to perform the actual container move between hosts.
+
+**What it does:**
+- Queries running containers and their resource snapshots
+- Identifies containers eligible for migration based on resource thresholds
+- Initiates container checkpoint, transfer, and restore across hosts
+- Handles Docker API authentication and connection management
+
+**Key technologies:**
+- Python
+- Docker SDK / Docker Engine REST API
+
+---
