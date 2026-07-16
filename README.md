@@ -185,7 +185,7 @@ Called by the orchestrator after the image transfer is complete. It:
 
 ## Part 3 — Stress Workload
 
-### randomloop.py — Random Resource Stress
+### looprandomstress.py — Random Resource Stress
 
 This script runs **inside** the container as its primary process. It generates randomised CPU, I/O, memory, and virtual memory stress across multiple epochs using the `stress` command, simulating a realistic and variable workload.
 
